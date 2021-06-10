@@ -1,6 +1,0 @@
-Flask==1.1.2
-Keras==2.1.6
-numpy==1.19.5
-tensorflow==1.5.0
-opencv-python==4.3.0.36
-gunicorn==20.1.0
