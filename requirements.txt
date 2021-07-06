@@ -1,0 +1,6 @@
+numpy==1.19.2
+tensorflow-cpu
+Keras
+Flask
+gunicorn
+Pillow

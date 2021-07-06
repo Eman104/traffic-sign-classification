@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: rgba(10, 101, 175, 0.849);
+        }
+        div {
+            text-align: center ;
+            width: 50%;
+            height: 100%;
+            background-image: url('../static/images/cartoon-animal-rabbit-white-driving-car-brown-bear-sitting-bare-waving-giraffe-elephant-cross-road-195960462.jpg');
+            background-size: 700px 600px;
+            margin-left: 310px;
+            margin-top: 80px;
+            padding-bottom: 100px;
+            padding-top: 10px;
+            box-shadow: 18px 25px 28px rgba(76, 79, 82, 0.849);
+            color: rgba(236, 239, 245, 0.849);
+        }
+        input {
+            margin-top: 35px;
+            text-align: center;
+            border-radius: 90px;
+            padding: 6px;
+            background: rgba(97, 178, 245, 0.849);
+            color: aliceblue;
+            font-size: 14px;
+
+        }
+        .bnt {
+            margin-top: 35px;
+            text-align: center;
+            border-radius: 90px;
+            padding: 6px;
+            border: solid rgba(10, 101, 175, 0.849) 2px;
+
+        }
+
+        p {
+            font-size: 20px;
+        }
+        img {
+        width: 60px;
+        height: 60px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1> traffic sing classsification</h1>
+        <p>this is an app to classify 43 type of classes</p>
+        <form method="POST" action="{{url_for('home')}}" enctype="multipart/form-data">
+        <input type="file" name='image' value="choose " class="bnt"><br>
+        <input type="submit"  value="submit">
+        </form>
+        <center>
+
+
+            <h2> Predicted class is:{{ prediction }}</h2>
+            <img src="{{url_for('load_img')}}" alt='img'>
+
+
+        </center>
+
+    </div>
+
+
+</body>
+
+</html>
