@@ -6,19 +6,25 @@
     <style>
         body {
             background-color: rgba(10, 101, 175, 0.849);
+            margin-left: auto;
+            margin-right: auto;
+            height: 80%;
         }
         div {
-            text-align: center ;
-            width: 50%;
-            height: 100%;
+            text-align: center;
+            width: 60%;
+
+            background-color: rgb(139, 108, 130);
+
+            margin: 10% 20% 25% 25%;
+
+            padding-bottom: 30px;
+            padding-top: 20px;
             background-image: url('../static/images/cartoon-animal-rabbit-white-driving-car-brown-bear-sitting-bare-waving-giraffe-elephant-cross-road-195960462.jpg');
             background-size: 700px 600px;
-            margin-left: 310px;
-            margin-top: 80px;
-            padding-bottom: 100px;
-            padding-top: 10px;
+
             box-shadow: 18px 25px 28px rgba(76, 79, 82, 0.849);
-            color: rgba(236, 239, 245, 0.849);
+            color: rgba(200, 200, 245, 0.849);
         }
         input {
             margin-top: 35px;
@@ -36,17 +42,16 @@
             border-radius: 90px;
             padding: 6px;
             border: solid rgba(10, 101, 175, 0.849) 2px;
+            width:70%;
+            margin-left:auto;
+            margin-right:auto;
 
         }
 
         p {
             font-size: 20px;
         }
-        img {
-        width: 60px;
-        height: 60px;
 
-        }
 
 
     </style>
@@ -63,7 +68,6 @@
 
 
             <h2> Predicted class is:{{ prediction }}</h2>
-            <img src="{{url_for('load_img')}}" alt='img'>
 
 
         </center>
