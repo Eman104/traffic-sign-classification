@@ -84,11 +84,6 @@ def home():
     return render_template('index2.html',prediction=sign)
 
 
-@app.route('/load_img')
-def load_img():
-    global COUNT
-    return send_from_directory('static', "{}.jpg".format(COUNT-1))
-
 
 if __name__ == '__main__':
     app.run(debug=True)
